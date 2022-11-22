@@ -41,7 +41,7 @@ body {
 }
 
 .nav_bs ul {
-    row-gap: 2git vw;
+    row-gap: 2vw;
     column-gap: 5vw;
     font-size: 1.8vw;
     color: white;
@@ -56,14 +56,26 @@ body {
 }
 
 @media screen and (max-width:1078px){
-    .nav_bs ul{
+   .nav_bs ul{
     font-size: 2.5vw;
-    }
+    } 
 }
 
-/* @media screen and (max-width:992px){
+@media screen and (max-width:992px){
+    .nav_bs ul{
+        font-size: 3.5vw;
+        } 
 
-} */
+        .index__img-nav{
+            width: 9vw;
+        }
+}
+
+@media screen and (max-width:524px){
+    .index__img-nav{
+        width: 13vw;
+    }
+}
 
 /* FINAL INDEX NAV BAR */
 
@@ -96,7 +108,7 @@ body {
     background-color: rgba(247, 191, 190, .6);
 }
 
-.section2 {
+.index__section2 {
     display: flex;
     justify-content: center;
 }
@@ -132,10 +144,6 @@ body {
 
 /* INICIO UBICACION */
 
-.ubicacion__container{
-    max-width: 100%;
-}
-
 .ubicacion__h1 {
     display: flex;
     justify-content: center;
@@ -165,18 +173,15 @@ body {
     "mapa foto";
 }
 
-
 .ubicacion__mapa div iframe{
     grid-area: mapa;
     width: 65vw;
     margin: 2vw;
 }
 
-
 .ubicacion__h3{
     display: flex;
     grid-area: texto;
-    /* font-size: 3vw; */
     text-align: center;
     color: white;
     -webkit-text-stroke: 0.1rem black;
@@ -328,7 +333,6 @@ margin-bottom: 5%;
 .productos__div a:hover{
 color: rgb(116, 21, 127);;
 background-color: white;
-/* font-style: oblique; */
 font-size: 2.2rem;
 }
 
@@ -424,8 +428,6 @@ legend{
     -webkit-text-stroke: 0.08rem black;
 }
 
-
-
 .contacto__form {
     display: flex;
     justify-content: center;
@@ -448,7 +450,6 @@ legend{
     gap: 4rem;
 }
 
-
 .contacto__div--input div {
     display: flex;
     flex-direction: row;
@@ -459,10 +460,6 @@ legend{
     width: 35vw;
 } 
 
-.contacto__div--label{
-    display: flex;
-}
-
 .contacto__div--label label {
     font-size: 3vw;
 }
@@ -472,12 +469,6 @@ legend{
     padding-left: 1vw;
 }
 
-.contacto__recuadros {
-    display: flex;
-    justify-content: center;
-}
-
-
 .contacto__textarea textarea::placeholder {
     font-size: 2vw;
     text-align: center;
@@ -485,7 +476,6 @@ legend{
 }
 
 .contacto__boton-enviar{
-    display: flex;
     width: 30vw;
     align-self: center;
 }
@@ -562,12 +552,6 @@ footer p {
     text-align: center;
 }
 
-@media screen and (max-width:520px){
-    footer p{
-        font-size: 4vw;
-    }
-}
-
 .footer__enlace {
     color: blue;
 }
@@ -585,6 +569,12 @@ footer p {
 
 .footer__contacto p img {
     width: 5vw;
+}
+
+@media screen and (max-width:520px){
+    footer p{
+        font-size: 4vw;
+    }
 }
 
 /* FINAL FOOTER */
