@@ -1,0 +1,121 @@
+/* INICIO UBICACION */
+.ubicacion__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    margin: 0rem 2rem 5rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+    text-align: center;
+  }
+  
+  .ubicacion__h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+    margin-bottom: 3rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+  }
+  
+  .ubicacion__mapa {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 450px 150px;
+    margin-bottom: 4vw;
+    grid-template-areas: "mapa texto" "mapa foto";
+  }
+  
+  .ubicacion__mapa div iframe {
+    grid-area: mapa;
+    width: 65vw;
+    margin: 2vw;
+  }
+  
+  .ubicacion__h3 {
+    display: flex;
+    grid-area: texto;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+  }
+  
+  .ubicacion__h3 h3 {
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .ubicacion__img--none {
+    display: none;
+  }
+  
+  .ubicacion__img {
+    display: flex;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: foto;
+    gap: 1rem;
+  }
+  
+  .ubicacion__img a img {
+    margin: 1rem;
+  }
+  
+  .ubicacion__img a:hover {
+    background-color: violet;
+    border-radius: 25px;
+    border: solid black 0.1rem;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .ubicacion__mapa {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 600px 200px 200px;
+      margin-bottom: 4vw;
+      grid-template-areas: "mapa" "texto" "foto";
+    }
+    .ubicacion__h1 {
+      -webkit-text-stroke: 0.06rem black;
+      font-size: 4vw;
+    }
+    .ubicacion__h2 {
+      -webkit-text-stroke: 0.06rem black;
+      font-size: 3vw;
+    }
+    .ubicacion__h3 h3 {
+      display: flex;
+      grid-area: texto;
+      font-size: 3.5vw;
+      text-align: center;
+      padding: 0 3rem;
+      -webkit-text-stroke: 0.06rem black;
+    }
+    .ubicacion__img--none {
+      display: flex;
+    }
+    .ubicacion__div--iframe {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 524px) {
+    .ubicacion__h3 h3 {
+      font-size: 5vw;
+      -webkit-text-stroke: 0.06rem black;
+    }
+    .ubicacion__h2 {
+      -webkit-text-stroke: 0.06rem black;
+      font-size: 4vw;
+    }
+    .ubicacion__h1 {
+      font-size: 6vw;
+      -webkit-text-stroke: 0.06rem black;
+    }
+  }
+  /* FINAL UBICACION */

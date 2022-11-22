@@ -1,0 +1,136 @@
+/* INICIO CONTACTO */
+fieldset:disabled {
+    pointer-events: revert;
+    opacity: revert;
+  }
+  
+  fieldset {
+    min-width: revert;
+    padding: revert;
+    margin: revert;
+    border: revert;
+  }
+  
+  legend {
+    float: unset;
+    width: auto;
+  }
+  
+  .contacto__h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 3rem 2rem 5rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.08rem black;
+  }
+  
+  .contacto__h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-bottom: 3rem;
+    color: white;
+    -webkit-text-stroke: 0.08rem black;
+  }
+  
+  .contacto__form {
+    display: flex;
+    justify-content: center;
+    margin: 8rem;
+  }
+  
+  .contacto__fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+  
+  .contacto__fieldset legend {
+    font-size: 2vw;
+  }
+  
+  .contacto__fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .contacto__div--input div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  
+  .contacto__input--renglones {
+    width: 35vw;
+  }
+  
+  .contacto__div--label label {
+    font-size: 3vw;
+  }
+  
+  .contacto__div--input input::placeholder {
+    font-size: 2vw;
+    padding-left: 1vw;
+  }
+  
+  .contacto__textarea textarea::placeholder {
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 10rem;
+  }
+  
+  .contacto__boton-enviar {
+    width: 30vw;
+    align-self: center;
+  }
+  
+  .contacto__boton-enviar input {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    background-color: rgb(158, 75, 165);
+    color: white;
+    border: solid;
+    font-size: 2rem;
+    border-radius: 30px;
+  }
+  
+  .contacto__boton-enviar input:hover {
+    color: rgb(158, 75, 165);
+    background-color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contacto__h2 {
+      font-size: 4.5vw;
+      -webkit-text-stroke: 0.05rem black;
+    }
+    .contacto__h1 {
+      font-size: 5.5vw;
+      -webkit-text-stroke: 0.05rem black;
+    }
+  }
+  @media screen and (max-width: 524px) {
+    .contacto__h2 {
+      font-size: 4.8vw;
+      -webkit-text-stroke: 0.05rem black;
+    }
+    .contacto__h1 {
+      font-size: 5.8vw;
+      -webkit-text-stroke: 0.05rem black;
+    }
+    .contacto__div--input input::placeholder {
+      font-size: 2.5vw;
+    }
+    .contacto__textarea textarea::placeholder {
+      font-size: 2.5vw;
+    }
+    .contacto__fieldset legend {
+      font-size: 2.5vw;
+    }
+  }
+  /* FINAL CONTACTO */

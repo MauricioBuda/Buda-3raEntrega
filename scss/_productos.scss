@@ -1,0 +1,57 @@
+/* INICIO PRODUCTOS */
+.productos__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    margin: 6rem 2rem 5rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+  }
+  
+  .productos__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .productos__div div {
+    border: solid rgb(116, 21, 127);
+    margin: 3%;
+    background-color: rgb(233, 224, 234);
+    text-align: center;
+  }
+  
+  .productos__div div img {
+    width: 90%;
+    padding: 5%;
+  }
+  
+  .productos__div div h2 {
+    font-size: 3rem;
+    margin: 5%;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+  }
+  
+  .productos__div a {
+    background-color: rgb(175, 148, 245);
+    border: solid rgb(116, 21, 127);
+    font-size: 2rem;
+    padding: 0.2rem;
+    display: inline-block;
+    margin-bottom: 5%;
+  }
+  
+  .productos__div a:hover {
+    color: rgb(116, 21, 127);
+    background-color: white;
+    font-size: 2.2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .productos__div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  /* FINAL PRODUCTOS */
