@@ -26,11 +26,15 @@
   
   @media screen and (max-width: 524px) {
     .tips__h2 {
-      font-size: 3rem;
-      -webkit-text-stroke: 0.08rem black;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.08rem black;
     }
     .tips__h1 {
-      font-size: 3.5rem;
-      -webkit-text-stroke: 0.08rem black;
+    font-size: 3.5rem;
+    -webkit-text-stroke: 0.08rem black;
+    }
+    .tips__section div iframe{
+    margin-left: 2rem;
+    margin-right: 2rem;
     }
   }
