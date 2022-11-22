@@ -1,0 +1,590 @@
+/* INICIO GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: radial-gradient(#e068b6, #d9e4ea);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* FINAL GENERAL */
+
+
+/* INICIO INDEX NAVBAR */
+
+.nav_bs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_bs ul {
+    row-gap: 2git vw;
+    column-gap: 5vw;
+    font-size: 1.8vw;
+    color: white;
+}
+
+.nav_bs ul li a{
+    color: white;
+} 
+
+.index__img-nav{
+    width: 5.5vw;
+}
+
+@media screen and (max-width:1078px){
+    .nav_bs ul{
+    font-size: 2.5vw;
+    }
+}
+
+/* @media screen and (max-width:992px){
+
+} */
+
+/* FINAL INDEX NAV BAR */
+
+
+/* INICIO INDEX PRINCIPAL */
+
+.index__section1 div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index__h1 {
+    color: rgb(140, 17, 140);
+    align-items: center;
+    font-size: 8rem;
+    -webkit-text-stroke: 0.1rem white;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.index__imagen2 {
+    margin: 1rem;
+    width: 25rem;
+    transition-duration: 1s;
+}
+
+.index__imagen2:hover{
+    border-radius: 25px;
+    border: solid black 0.1rem;
+    background-color: rgba(247, 191, 190, .6);
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.index__h2 {
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+    font-size: 6rem;
+}
+
+@media screen and (max-width:1078px){
+    .index__section1-img div a{
+        display: none;
+    }
+
+    .index__h1{
+        text-align: center;
+        padding: 5rem 0;
+    }
+}
+
+@media screen and (max-width:520px){
+    .index__h2{
+        font-size: 4rem;
+    }
+    .index__h1{
+        font-size: 6rem;
+    }
+}
+
+/* FINAL INDEX PRINCIPAL */
+
+
+/* INICIO UBICACION */
+
+.ubicacion__container{
+    max-width: 100%;
+}
+
+.ubicacion__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    margin: 0rem 2rem 5rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+    text-align: center;
+}
+
+.ubicacion__h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+    margin-bottom: 3rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+}
+
+.ubicacion__mapa {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 450px 150px ;
+    margin-bottom: 4vw;
+    grid-template-areas: 
+    "mapa texto"
+    "mapa foto";
+}
+
+
+.ubicacion__mapa div iframe{
+    grid-area: mapa;
+    width: 65vw;
+    margin: 2vw;
+}
+
+
+.ubicacion__h3{
+    display: flex;
+    grid-area: texto;
+    /* font-size: 3vw; */
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+}
+
+.ubicacion__h3 h3{
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+
+.ubicacion__img--none{
+display: none;
+}
+
+.ubicacion__img{
+    display: flex;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: foto;
+    gap: 1rem;
+}
+
+.ubicacion__img a img{
+    margin: 1rem;
+}
+
+
+.ubicacion__img a:hover{
+    background-color: violet;
+    border-radius: 25px;
+    border: solid black 0.1rem;
+}
+
+@media screen and (max-width:1024px) {
+    .ubicacion__mapa {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px 200px 200px;
+        margin-bottom: 4vw;
+        grid-template-areas:
+            "mapa"
+            "texto"
+            "foto";
+    }
+
+    .ubicacion__h1{
+        -webkit-text-stroke: 0.06rem black;
+        font-size: 4vw;
+    }
+
+    .ubicacion__h2{
+        -webkit-text-stroke: 0.06rem black;
+        font-size: 3vw;
+    }
+
+    .ubicacion__h3 h3 {
+        display: flex;
+        grid-area: texto;
+        font-size: 3.5vw;
+        text-align: center;
+        padding: 0 3rem;
+        -webkit-text-stroke: 0.06rem black;
+    }
+
+    .ubicacion__img--none {
+        display: flex;
+    }
+
+    .ubicacion__div--iframe {
+        display: flex ;
+        justify-content: center ;
+    }
+}
+
+@media screen and (max-width:524px){
+    .ubicacion__h3 h3{
+    font-size: 5vw;
+    -webkit-text-stroke: 0.06rem black; 
+    }  
+
+    .ubicacion__h2{
+        -webkit-text-stroke: 0.06rem black;
+        font-size: 4vw;
+    }
+
+    .ubicacion__h1{
+    font-size: 6vw;
+    -webkit-text-stroke: 0.06rem black; 
+    }
+}
+
+
+
+/* FINAL UBICACION */
+
+
+/* INICIO PRODUCTOS */
+
+.productos__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    margin: 6rem 2rem 5rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+}
+
+.productos__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos__div div{
+    border: solid rgb(116, 21, 127);
+    margin: 3%;
+    background-color: rgb(233, 224, 234);
+    text-align: center;
+    
+}
+
+.productos__div div img {
+    width: 90%;
+    padding: 5%;
+}
+
+.productos__div div h2 {
+    font-size: 3rem;
+    margin: 5%;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+}
+
+.productos__div a{
+background-color: rgb(175, 148, 245);
+border: solid rgb(116, 21, 127);
+font-size: 2rem;
+padding: 0.2rem;
+display: inline-block;
+margin-bottom: 5%;
+}
+
+.productos__div a:hover{
+color: rgb(116, 21, 127);;
+background-color: white;
+/* font-style: oblique; */
+font-size: 2.2rem;
+}
+
+@media screen and (max-width:768px){
+    .productos__div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* FINAL PRODUCTOS */
+
+
+/* INICIO TIPS */
+
+.tips__h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0rem 2rem 5rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+}
+
+.tips__h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+}
+
+.tips__link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width:524px){
+    .tips__h2 {
+        font-size: 3rem;
+        -webkit-text-stroke: 0.08rem black;
+    }
+
+    .tips__h1 {
+        font-size: 3.5rem;
+        -webkit-text-stroke: 0.08rem black;
+    }
+}
+
+/* FINAL TIPS */
+
+
+/* INICIO CONTACTO */
+
+fieldset:disabled{
+    pointer-events: revert;
+    opacity: revert;
+}
+
+fieldset {
+    min-width: revert;
+    padding: revert;
+    margin: revert;
+    border: revert;
+}
+
+legend{
+    float:unset;
+    width: auto;
+}
+
+.contacto__h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 3rem 2rem 5rem 0rem;
+    color: white;
+    -webkit-text-stroke: 0.08rem black;
+}
+
+.contacto__h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-bottom: 3rem;
+    color: white;
+    -webkit-text-stroke: 0.08rem black;
+}
+
+
+
+.contacto__form {
+    display: flex;
+    justify-content: center;
+    margin: 8rem;
+}
+
+.contacto__fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.contacto__fieldset legend {
+    font-size: 2vw;
+}
+
+.contacto__fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+.contacto__div--input div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.contacto__input--renglones {
+    width: 35vw;
+} 
+
+.contacto__div--label{
+    display: flex;
+}
+
+.contacto__div--label label {
+    font-size: 3vw;
+}
+
+.contacto__div--input input::placeholder {
+    font-size: 2vw;
+    padding-left: 1vw;
+}
+
+.contacto__recuadros {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contacto__textarea textarea::placeholder {
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.contacto__boton-enviar{
+    display: flex;
+    width: 30vw;
+    align-self: center;
+}
+
+.contacto__boton-enviar input {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    background-color: rgb(158, 75, 165);
+    color: white;
+    border: solid;
+    font-size: 2rem;
+    border-radius: 30px;
+}
+
+.contacto__boton-enviar input:hover {
+    color: rgb(158, 75, 165);
+    background-color: white;
+}
+
+@media screen and (max-width:768px){
+    .contacto__h2{
+        font-size: 4.5vw;
+        -webkit-text-stroke: 0.05rem black;
+    }
+    .contacto__h1{
+        font-size: 5.5vw;
+        -webkit-text-stroke: 0.05rem black;
+    }
+}
+
+@media screen and (max-width:524px){
+    .contacto__h2{
+        font-size: 4.8vw;
+        -webkit-text-stroke: 0.05rem black;
+    }
+    .contacto__h1{
+        font-size: 5.8vw;
+        -webkit-text-stroke: 0.05rem black;
+    }
+    .contacto__div--input input::placeholder {
+        font-size: 2.5vw;
+    }
+    .contacto__textarea textarea::placeholder {
+        font-size: 2.5vw;
+    }
+    .contacto__fieldset legend {
+        font-size: 2.5vw;
+    }
+}
+
+/* FINAL CONTACTO */
+
+
+/* INICIO FOOTER */
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footers p a img:hover {
+    width: 3vw;
+}
+
+footer p img {
+    width: 2.5vw;
+}
+
+footer p {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+@media screen and (max-width:520px){
+    footer p{
+        font-size: 4vw;
+    }
+}
+
+.footer__enlace {
+    color: blue;
+}
+
+.footer__enlace:hover {
+    color: red;
+    text-transform: uppercase;
+}
+
+.footer__contacto p a img:hover{
+    background-color: violet;
+    border-radius: 25px;
+    border: solid black 0.1rem;
+}
+
+.footer__contacto p img {
+    width: 5vw;
+}
+
+/* FINAL FOOTER */
