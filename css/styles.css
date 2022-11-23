@@ -46,6 +46,11 @@ body {
 
 .index__img-nav {
   width: 5.5vw;
+  transition: all 0.5s ease-in-out;
+}
+
+.index__img-nav:hover {
+  filter: saturate(180%);
 }
 
 @media screen and (max-width: 1078px) {
@@ -68,6 +73,15 @@ body {
 }
 /* FINAL INDEX NAV BAR */
 /* INICIO INDEX PRINCIPAL */
+#carouselExampleIndicators {
+  margin-bottom: 5vw;
+  width: 45vw;
+}
+
+.index__carrusel div img {
+  width: 45vw;
+}
+
 .index__section1 div {
   display: flex;
   align-items: center;
@@ -75,23 +89,21 @@ body {
 }
 
 .index__h1 {
-  color: rgb(140, 17, 140);
+  margin-top: 4rem;
+  color: white;
   align-items: center;
-  font-size: 8rem;
-  -webkit-text-stroke: 0.1rem white;
-  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 10vw;
+  font-family: "Great Vibes", cursive;
 }
 
 .index__imagen2 {
   margin: 1rem;
   width: 25rem;
-  transition-duration: 1s;
+  transition: all 0.5s ease-in-out;
 }
 
 .index__imagen2:hover {
-  border-radius: 25px;
-  border: solid black 0.1rem;
-  background-color: rgba(247, 191, 190, 0.6);
+  filter: opacity(0.5);
 }
 
 .index__section2 {
@@ -105,6 +117,11 @@ body {
   font-size: 6rem;
 }
 
+@media screen and (max-width: 1275px) {
+  .index__h1 {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 1078px) {
   .index__section1-img div a {
     display: none;
