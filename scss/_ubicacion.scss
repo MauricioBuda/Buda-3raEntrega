@@ -1,10 +1,10 @@
 .ubicacion__h1 {
     display: flex;
     justify-content: center;
-    font-size: 3vw;
-    margin: 0rem 2rem 5rem 0rem;
+    margin: 5rem 2rem 5rem 0rem;
     color: white;
-    -webkit-text-stroke: 0.1rem black;
+    font-size: 4vw;
+    font-family: 'Great Vibes', cursive;
     text-align: center;
   }
   
@@ -14,7 +14,6 @@
     font-size: 2.5vw;
     margin-bottom: 3rem;
     color: white;
-    -webkit-text-stroke: 0.1rem black;
   }
   
   .ubicacion__mapa {
@@ -36,7 +35,6 @@
     grid-area: texto;
     text-align: center;
     color: white;
-    -webkit-text-stroke: 0.1rem black;
   }
   
   .ubicacion__h3 h3 {
@@ -68,7 +66,6 @@
   .ubicacion__img a:hover {
     background-color: violet;
     border-radius: 25px;
-    border: solid black 0.1rem;
   }
   
   @media screen and (max-width: 1024px) {
@@ -80,11 +77,9 @@
       grid-template-areas: "mapa" "texto" "foto";
     }
     .ubicacion__h1 {
-      -webkit-text-stroke: 0.06rem black;
       font-size: 4vw;
     }
     .ubicacion__h2 {
-      -webkit-text-stroke: 0.06rem black;
       font-size: 3vw;
     }
     .ubicacion__h3 h3 {
@@ -93,7 +88,6 @@
       font-size: 3.5vw;
       text-align: center;
       padding: 0 3rem;
-      -webkit-text-stroke: 0.06rem black;
     }
     .ubicacion__img--none {
       display: flex;
@@ -106,14 +100,11 @@
   @media screen and (max-width: 524px) {
     .ubicacion__h3 h3 {
       font-size: 5vw;
-      -webkit-text-stroke: 0.06rem black;
     }
     .ubicacion__h2 {
-      -webkit-text-stroke: 0.06rem black;
       font-size: 4vw;
     }
     .ubicacion__h1 {
       font-size: 6vw;
-      -webkit-text-stroke: 0.06rem black;
     }
   }

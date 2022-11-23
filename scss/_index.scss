@@ -15,6 +15,10 @@
   color: white;
 }
 
+.index__bg-nav{
+  background-image:  radial-gradient(#a6d3eb, #cb50a0 );
+}
+
 .index__img-nav {
   width: 5.5vw;
   transition: all .5s ease-in-out;
@@ -37,7 +41,7 @@
   }
 
   .index__img-nav {
-    width: 9vw;
+    width: 7vw;
   }
 }
 
@@ -68,9 +72,9 @@
 .index__h1 {
   margin-top: 4rem;
   color: white;
+  font-family: 'Great Vibes', cursive;
   align-items: center;
   font-size: 10vw;
-  font-family: 'Great Vibes', cursive;
 }
 
 .index__imagen2 {
@@ -110,6 +114,17 @@
     text-align: center;
     padding: 5rem 0;
   }
+}
+
+@media screen and (max-width: 768px) {
+  #carouselExampleIndicators{
+    width: 65vw;
+  }
+  
+    .index__carrusel div img{
+      width: 65vw;
+    }
+  
 }
 
 @media screen and (max-width: 520px) {

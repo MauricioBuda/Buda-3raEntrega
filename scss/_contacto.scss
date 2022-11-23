@@ -20,10 +20,10 @@ fieldset:disabled {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 3.5vw;
-    margin: 3rem 2rem 5rem 0rem;
+    font-size: 4vw;
+    font-family: 'Great Vibes', cursive;
+    margin: 5rem 2rem 5rem 0rem;
     color: white;
-    -webkit-text-stroke: 0.08rem black;
   }
   
   .contacto__h2 {
@@ -33,7 +33,6 @@ fieldset:disabled {
     font-size: 2.5vw;
     margin-bottom: 3rem;
     color: white;
-    -webkit-text-stroke: 0.08rem black;
   }
   
   .contacto__form {
@@ -107,21 +106,17 @@ fieldset:disabled {
   @media screen and (max-width: 768px) {
     .contacto__h2 {
       font-size: 4.5vw;
-      -webkit-text-stroke: 0.05rem black;
     }
     .contacto__h1 {
       font-size: 5.5vw;
-      -webkit-text-stroke: 0.05rem black;
     }
   }
   @media screen and (max-width: 524px) {
     .contacto__h2 {
-      font-size: 4.8vw;
-      -webkit-text-stroke: 0.05rem black;
+      font-size: 4vw;
     }
     .contacto__h1 {
-      font-size: 5.8vw;
-      -webkit-text-stroke: 0.05rem black;
+      font-size: 8vw;
     }
     .contacto__div--input input::placeholder {
       font-size: 2.5vw;
