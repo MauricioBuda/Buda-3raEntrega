@@ -1,3 +1,5 @@
+/* INICIO DE UBICACION */
+
 .ubicacion__h1 {
     display: flex;
     justify-content: center;
@@ -22,27 +24,27 @@
     grid-template-rows: 450px 150px;
     margin-bottom: 4vw;
     grid-template-areas: "mapa texto" "mapa foto";
+
+    div iframe {
+      grid-area: mapa;
+      width: 65vw;
+      margin: 2vw;
+    }
   }
-  
-  .ubicacion__mapa div iframe {
-    grid-area: mapa;
-    width: 65vw;
-    margin: 2vw;
-  }
-  
+
   .ubicacion__h3 {
     display: flex;
     grid-area: texto;
     text-align: center;
     color: white;
-  }
-  
-  .ubicacion__h3 h3 {
-    font-size: 3vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
+
+    h3 {
+      font-size: 3vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    }
   }
   
   .ubicacion__img--none {
@@ -57,18 +59,25 @@
     align-items: center;
     grid-area: foto;
     gap: 1rem;
-  }
+
+    a img {
+      margin: 1rem;
+    }
+
+    a {
+      transition: all .5s ease-in-out;
+    }
+
+    a:hover {
+      filter: saturate(180%)
+    }
+  }  
+
+/* FINAL UBICACION */
+
+/* INICIO DE MEDIA-QUERYS DE UBICACION */
   
-  .ubicacion__img a img {
-    margin: 1rem;
-  }
-  
-  .ubicacion__img a:hover {
-    background-color: violet;
-    border-radius: 25px;
-  }
-  
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $pantallas-grandes) {
     .ubicacion__mapa {
       display: grid;
       grid-template-columns: 1fr;
@@ -97,7 +106,7 @@
       justify-content: center;
     }
   }
-  @media screen and (max-width: 524px) {
+  @media screen and (max-width: $pantallas-chicas) {
     .ubicacion__h3 h3 {
       font-size: 5vw;
     }
@@ -108,3 +117,5 @@
       font-size: 6vw;
     }
   }
+
+/* FINAL DE MEDIA-QUERYS DE UBICACION */

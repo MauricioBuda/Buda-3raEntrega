@@ -1,3 +1,5 @@
+/* INICIO DE TIPS */
+
 .tips__h1 {
     display: flex;
     justify-content: center;
@@ -22,8 +24,12 @@
     justify-content: center;
     margin-bottom: 3rem;
   }
+
+/* FINAL DE TIPS */
+
+/* INICIO DE MEDIA-QUERYS DE TIPS */
   
-  @media screen and (max-width: 524px) {
+  @media screen and (max-width: $pantallas-chicas) {
     .tips__h2 {
     font-size: 5vw;
     }
@@ -35,3 +41,5 @@
     margin-right: 2rem;
     }
   }
+
+/* FINAL DE MEDIA-QUERYS DE TIPS */

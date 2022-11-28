@@ -1,3 +1,4 @@
+/* INICIO DE GLOBALES */
 * {
   margin: 0;
   padding: 0;
@@ -27,19 +28,19 @@ body {
   min-height: 100%;
 }
 
+/* FINAL DE GLOBALES */
+/* INICIO INDEX NAV BAR */
 .nav_bs {
   display: grid;
   justify-content: space-around;
   align-items: center;
 }
-
 .nav_bs ul {
   row-gap: 2vw;
   column-gap: 5vw;
   font-size: 1.8vw;
   color: white;
 }
-
 .nav_bs ul li a {
   color: white;
 }
@@ -52,40 +53,21 @@ body {
   width: 5.5vw;
   transition: all 0.5s ease-in-out;
 }
-
 .index__img-nav:hover {
   filter: saturate(180%);
 }
 
-@media screen and (max-width: 1078px) {
-  .nav_bs ul {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (max-width: 992px) {
-  .nav_bs ul {
-    font-size: 3.5vw;
-  }
-  .index__img-nav {
-    width: 7vw;
-  }
-}
-@media screen and (max-width: 524px) {
-  .index__img-nav {
-    width: 13vw;
-  }
-}
 /* FINAL INDEX NAV BAR */
 /* INICIO INDEX PRINCIPAL */
 #carouselExampleIndicators {
   margin-bottom: 5vw;
-  width: 46vw;
   height: 23vw;
+  width: 46vw;
 }
 
 .index__carrusel div img {
-  width: 46vw;
   height: 23vw;
+  width: 46vw;
   object-fit: cover;
 }
 
@@ -112,7 +94,6 @@ body {
   width: 25rem;
   transition: all 0.5s ease-in-out;
 }
-
 .index__imagen2:hover {
   filter: opacity(0.5);
 }
@@ -122,12 +103,17 @@ body {
   justify-content: center;
 }
 
+/* FINAL INDEX PRINCIPAL */
+/* INICIO DE MEDIA-QUERYS DEL INDEX */
 @media screen and (max-width: 1275px) {
   .index__h1 {
     text-align: center;
   }
 }
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: 1024px) {
+  .nav_bs ul {
+    font-size: 2.5vw;
+  }
   .index__section1-img div a {
     display: none;
   }
@@ -136,31 +122,44 @@ body {
     padding: 5rem 0;
   }
 }
+@media screen and (max-width: 992px) {
+  .nav_bs ul {
+    font-size: 3.5vw;
+  }
+  .index__img-nav {
+    width: 7vw;
+  }
+}
 @media screen and (max-width: 768px) {
   #carouselExampleIndicators {
-    width: 66vw;
     height: 33vw;
+    width: 66vw;
   }
   .index__carrusel div img {
-    width: 66vw;
     height: 33vw;
+    width: 66vw;
     object-fit: cover;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 524px) {
+  .index__img-nav {
+    width: 13vw;
+  }
   .index__h1 {
     font-size: 7rem;
   }
   #carouselExampleIndicators {
-    width: 86vw;
     height: 43vw;
+    width: 86vw;
   }
   .index__carrusel div img {
-    width: 86vw;
     height: 43vw;
+    width: 86vw;
     object-fit: cover;
   }
 }
+/* FINAL DE MEDIA-QUERYS DEL INDEX */
+/* INICIO DE UBICACION */
 .ubicacion__h1 {
   display: flex;
   justify-content: center;
@@ -186,7 +185,6 @@ body {
   margin-bottom: 4vw;
   grid-template-areas: "mapa texto" "mapa foto";
 }
-
 .ubicacion__mapa div iframe {
   grid-area: mapa;
   width: 65vw;
@@ -199,7 +197,6 @@ body {
   text-align: center;
   color: white;
 }
-
 .ubicacion__h3 h3 {
   font-size: 3vw;
   display: flex;
@@ -221,16 +218,18 @@ body {
   grid-area: foto;
   gap: 1rem;
 }
-
 .ubicacion__img a img {
   margin: 1rem;
 }
-
+.ubicacion__img a {
+  transition: all 0.5s ease-in-out;
+}
 .ubicacion__img a:hover {
-  background-color: violet;
-  border-radius: 25px;
+  filter: saturate(180%);
 }
 
+/* FINAL UBICACION */
+/* INICIO DE MEDIA-QUERYS DE UBICACION */
 @media screen and (max-width: 1024px) {
   .ubicacion__mapa {
     display: grid;
@@ -271,6 +270,8 @@ body {
     font-size: 6vw;
   }
 }
+/* FINAL DE MEDIA-QUERYS DE UBICACION */
+/* INICIO DE PRODUCTOS */
 .productos__h1 {
   display: flex;
   justify-content: center;
@@ -317,9 +318,10 @@ body {
 .productos__div a:hover {
   color: rgb(116, 21, 127);
   background-color: white;
-  font-size: 2.2rem;
 }
 
+/* FINAL DE PRODUCTOS */
+/* INICIO DE MEDIA-QUERYS DE PRODUCTOS */
 @media screen and (max-width: 768px) {
   .productos__div {
     flex-direction: column;
@@ -334,6 +336,8 @@ body {
     font-size: 10vw;
   }
 }
+/* FINAL DE MEDIA-QUERYS DE PRODUCTOS */
+/* INICIO DE TIPS */
 .tips__h1 {
   display: flex;
   justify-content: center;
@@ -359,6 +363,8 @@ body {
   margin-bottom: 3rem;
 }
 
+/* FINAL DE TIPS */
+/* INICIO DE MEDIA-QUERYS DE TIPS */
 @media screen and (max-width: 524px) {
   .tips__h2 {
     font-size: 5vw;
@@ -371,6 +377,7 @@ body {
     margin-right: 2rem;
   }
 }
+/* FINAL DE MEDIA-QUERYS DE TIPS */
 /* INICIO CONTACTO */
 fieldset:disabled {
   pointer-events: revert;
@@ -419,11 +426,9 @@ legend {
   flex-direction: column;
   padding: 3rem;
 }
-
 .contacto__fieldset legend {
   font-size: 2vw;
 }
-
 .contacto__fieldset div {
   display: flex;
   flex-direction: column;
@@ -459,7 +464,6 @@ legend {
   width: 30vw;
   align-self: center;
 }
-
 .contacto__boton-enviar input {
   display: flex;
   padding: 1rem;
@@ -470,12 +474,13 @@ legend {
   font-size: 2rem;
   border-radius: 30px;
 }
-
 .contacto__boton-enviar input:hover {
   color: rgb(158, 75, 165);
   background-color: white;
 }
 
+/* FINAL CONTACTO */
+/* INICIO DE MEDIA-QUERYS DE CONTACTO */
 @media screen and (max-width: 768px) {
   .contacto__h2 {
     font-size: 4.5vw;
@@ -501,50 +506,48 @@ legend {
     font-size: 2.5vw;
   }
 }
-/* FINAL CONTACTO */
+/* FINAL DE MEDIA-QUERYS DE CONTACTO */
+/* INICIO FOOTER */
 footer {
   margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+footer p {
+  font-size: 2.5vw;
+  text-align: center;
+}
+footer p img {
+  width: 2.5vw;
+}
 
 .footers p a img:hover {
   width: 3vw;
 }
 
-footer p img {
-  width: 2.5vw;
-}
-
-footer p {
-  font-size: 2.5vw;
-  text-align: center;
-}
-
 .footer__enlace {
   color: blue;
+  transition: all 0.5s ease-in-out;
 }
-
 .footer__enlace:hover {
   color: red;
-  text-transform: uppercase;
-}
-
-.footer__contacto p a img:hover {
-  background-color: violet;
-  border-radius: 25px;
-  border: solid black 0.1rem;
 }
 
 .footer__contacto p img {
   width: 5vw;
 }
+.footer__contacto p a img:hover {
+  filter: saturate(180%);
+}
 
+/* FINAL FOOTER */
+/* INICIO MEDIA QUERY DEL FOOTER */
 @media screen and (max-width: 520px) {
   footer p {
     font-size: 4vw;
   }
 }
+/* FINAL MEDIA QUERY DEL FOOTER */
 
 /*# sourceMappingURL=styles.css.map */

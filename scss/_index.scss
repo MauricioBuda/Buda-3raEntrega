@@ -1,68 +1,46 @@
+/* INICIO INDEX NAV BAR */
+
 .nav_bs {
   display: grid;
   justify-content: space-around;
   align-items: center;
-}
 
-.nav_bs ul {
-  row-gap: 2vw;
-  column-gap: 5vw;
-  font-size: 1.8vw;
-  color: white;
-}
+  ul {
+    row-gap: 2vw;
+    column-gap: 5vw;
+    font-size: 1.8vw;
+    color: white;
+  }
 
-.nav_bs ul li a {
-  color: white;
+  ul li a {
+    color: white;
+  }
 }
 
 .index__bg-nav{
-  background-image:  radial-gradient(#a6d3eb, #cb50a0 );
+  background-image:$bi-nav;
 }
 
 .index__img-nav {
   width: 5.5vw;
   transition: all .5s ease-in-out;
-}
 
-
-.index__img-nav:hover {
-  filter: saturate(180%);
-}
-
-@media screen and (max-width: 1078px) {
-  .nav_bs ul {
-    font-size: 2.5vw;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .nav_bs ul {
-    font-size: 3.5vw;
-  }
-
-  .index__img-nav {
-    width: 7vw;
-  }
-}
-
-@media screen and (max-width: 524px) {
-  .index__img-nav {
-    width: 13vw;
+  &:hover {
+    filter: saturate(180%);
   }
 }
 
 /* FINAL INDEX NAV BAR */
+
 /* INICIO INDEX PRINCIPAL */
 
 #carouselExampleIndicators{
   margin-bottom: 5vw;
-  width: 46vw;
-  height: 23vw;
+  @include tamaño (23vw,46vw);
 }
 
   .index__carrusel div img{
-    width: 46vw;
-    height: 23vw;
+    @include tamaño (23vw,46vw);
     object-fit: cover;
   }
 
@@ -79,7 +57,7 @@
 .index__h1 {
   margin-top: 4rem;
   color: white;
-  font-family: 'Great Vibes', cursive;
+  font-family: $font-titulos;
   align-items: center;
   font-size: 10vw;
 }
@@ -89,10 +67,9 @@
   width: 25rem;
   transition: all .5s ease-in-out;
 
-}
-
-.index__imagen2:hover {
-  filter: opacity(.5);
+  &:hover {
+    filter: opacity(.5);
+  }
 }
 
 .index__section2 {
@@ -100,13 +77,21 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 1275px) {
+/* FINAL INDEX PRINCIPAL */
+
+/* INICIO DE MEDIA-QUERYS DEL INDEX */
+
+@media screen and (max-width: $pantallas-masgrandes) {
   .index__h1 {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: $pantallas-grandes) {
+  .nav_bs ul {
+    font-size: 2.5vw;
+  }
+
   .index__section1-img div a {
     display: none;
   }
@@ -117,33 +102,47 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: $pantalla-bs) {
+  .nav_bs ul {
+    font-size: 3.5vw;
+  }
+
+  .index__img-nav {
+    width: 7vw;
+  }
+}
+
+@media screen and (max-width: $pantallas-medianas) {
   #carouselExampleIndicators{
-    width: 66vw;
-    height: 33vw;
+    @include tamaño (33vw,66vw);
+
   }
   
     .index__carrusel div img{
-      width: 66vw;
-      height: 33vw;
+      @include tamaño (33vw,66vw);
       object-fit: cover;
     }
   
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: $pantallas-chicas) {
+  .index__img-nav {
+    width: 13vw;
+  }
+
   .index__h1 {
     font-size: 7rem;
   }
 
   #carouselExampleIndicators{
-    width: 86vw;
-    height: 43vw;
+    @include tamaño (43vw,86vw);
   }
   
     .index__carrusel div img{
-      width: 86vw;
-      height: 43vw;
+      @include tamaño (43vw,86vw);
       object-fit: cover;
     }
 }
+
+/* FINAL DE MEDIA-QUERYS DEL INDEX */
