@@ -14,7 +14,7 @@ $pantalla-bs: 992px;
 $pantallas-grandes: 1024px;
 $pantallas-masgrandes: 1275px;
 
-// MIXINS:
+// MIXINS: (usado en las img del carrusel, en el index)
 @mixin tamaño ($heigth, $width) {
     height: $heigth;
     width: $width;

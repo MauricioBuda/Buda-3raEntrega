@@ -73,8 +73,7 @@
 }
 
 .index__section2 {
-  display: flex;
-  justify-content: center;
+  @extend .dflex-jcenter;
 }
 
 /* FINAL INDEX PRINCIPAL */

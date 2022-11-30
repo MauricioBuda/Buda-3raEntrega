@@ -18,18 +18,16 @@ fieldset:disabled {
   }
   
   .contacto__h1 {
-    display: flex;
-    justify-content: center;
+    @extend .dflex-jcenter;
     text-align: center;
     font-size: 4vw;
-    font-family: 'Great Vibes', cursive;
+    font-family: $font-titulos;
     margin: 5rem 2rem 5rem 0rem;
     color: white;
   }
   
   .contacto__h2 {
-    display: flex;
-    justify-content: center;
+    @extend .dflex-jcenter;
     text-align: center;
     font-size: 2.5vw;
     margin-bottom: 3rem;
@@ -37,8 +35,7 @@ fieldset:disabled {
   }
   
   .contacto__form {
-    display: flex;
-    justify-content: center;
+    @extend .dflex-jcenter;
     margin: 8rem;
   }
   
@@ -88,9 +85,8 @@ fieldset:disabled {
     align-self: center;
 
     input {
-      display: flex;
+      @extend .dflex-jcenter;
       padding: 1rem;
-      justify-content: center;
       background-color: rgb(158, 75, 165);
       color: white;
       border: solid;

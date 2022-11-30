@@ -1,8 +1,7 @@
 /* INICIO DE TIPS */
 
 .tips__h1 {
-    display: flex;
-    justify-content: center;
+  @extend .dflex-jcenter;
     text-align: center;
     font-size: 4vw;
     font-family: 'Great Vibes', cursive;
@@ -11,8 +10,7 @@
   }
   
   .tips__h2 {
-    display: flex;
-    justify-content: center;
+    @extend .dflex-jcenter;
     text-align: center;
     font-size: 3vw;
     margin-bottom: 3rem;
@@ -20,8 +18,7 @@
   }
   
   .tips__link {
-    display: flex;
-    justify-content: center;
+    @extend .dflex-jcenter;
     margin-bottom: 3rem;
   }
 

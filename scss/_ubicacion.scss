@@ -1,8 +1,7 @@
 /* INICIO DE UBICACION */
 
 .ubicacion__h1 {
-    display: flex;
-    justify-content: center;
+  @extend .dflex-jcenter;
     margin: 5rem 2rem 5rem 0rem;
     color: white;
     font-size: 4vw;
@@ -11,8 +10,7 @@
   }
   
   .ubicacion__h2 {
-    display: flex;
-    justify-content: center;
+    @extend .dflex-jcenter;
     font-size: 2.5vw;
     margin-bottom: 3rem;
     color: white;
@@ -40,8 +38,7 @@
 
     h3 {
       font-size: 3vw;
-      display: flex;
-      justify-content: center;
+      @extend .dflex-jcenter;
       align-items: center;
       max-width: 100%;
     }
@@ -54,8 +51,7 @@
   .ubicacion__img {
     display: flex;
     max-width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend .dflex-jcenter;
     align-items: center;
     grid-area: foto;
     gap: 1rem;
