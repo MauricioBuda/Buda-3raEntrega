@@ -143,8 +143,11 @@ body {
   }
 }
 @media screen and (max-width: 524px) {
+  .nav_bs ul li a {
+    font-size: 6.5vw;
+  }
   .index__img-nav {
-    width: 13vw;
+    width: 20vw;
   }
   .index__h1 {
     font-size: 7rem;
