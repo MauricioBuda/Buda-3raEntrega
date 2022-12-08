@@ -272,7 +272,7 @@ body {
 /* FINAL DE MEDIA-QUERYS DE UBICACION */
 /* INICIO DE PRODUCTOS */
 .productos__h1 {
-  font-size: 4vw;
+  font-size: 6vw;
   font-family: "Great Vibes", cursive;
   margin: 5rem 2rem 5rem 0rem;
   color: white;
@@ -287,6 +287,7 @@ body {
   margin: 3%;
   background-color: rgb(233, 224, 234);
   text-align: center;
+  width: 25vw;
 }
 
 .productos__div div img {
@@ -329,6 +330,9 @@ body {
 @media screen and (max-width: 524px) {
   .productos__h1 {
     font-size: 18vw;
+  }
+  .productos__div div {
+    width: 60vw;
   }
 }
 /* FINAL DE MEDIA-QUERYS DE PRODUCTOS */
