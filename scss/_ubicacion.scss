@@ -104,13 +104,16 @@
   }
   @media screen and (max-width: $pantallas-chicas) {
     .ubicacion__h3 h3 {
-      font-size: 5vw;
+      font-size: 6vw;
+    }
+    .ubicacion__img a img{
+      margin: 0rem;
     }
     .ubicacion__h2 {
-      font-size: 4vw;
+      font-size: 5vw;
     }
     .ubicacion__h1 {
-      font-size: 6vw;
+      font-size: 7.5vw;
     }
   }
 
