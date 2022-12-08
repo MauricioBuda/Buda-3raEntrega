@@ -44,8 +44,14 @@ footer {
 
   @media screen and (max-width: 520px) {
     footer p {
-      font-size: 4vw;
+      font-size: 4.5vw;
     }
+    .footer__img-redes{
+      display: none;
+    }
+  }
+  .footer__contacto img{
+    display: none;
   }
 
   /* FINAL MEDIA QUERY DEL FOOTER */

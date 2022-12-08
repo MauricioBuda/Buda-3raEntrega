@@ -328,7 +328,7 @@ body {
 }
 @media screen and (max-width: 524px) {
   .productos__h1 {
-    font-size: 10vw;
+    font-size: 18vw;
   }
 }
 /* FINAL DE MEDIA-QUERYS DE PRODUCTOS */
@@ -480,19 +480,22 @@ legend {
 }
 @media screen and (max-width: 524px) {
   .contacto__h2 {
-    font-size: 4vw;
+    font-size: 5.5vw;
   }
   .contacto__h1 {
-    font-size: 8vw;
+    font-size: 10vw;
+  }
+  .contacto__div--label label {
+    font-size: 4vw;
   }
   .contacto__div--input input::placeholder {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
   .contacto__textarea textarea::placeholder {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
   .contacto__fieldset legend {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 }
 /* FINAL DE MEDIA-QUERYS DE CONTACTO */
@@ -532,9 +535,16 @@ footer p img {
 /* INICIO MEDIA QUERY DEL FOOTER */
 @media screen and (max-width: 520px) {
   footer p {
-    font-size: 4vw;
+    font-size: 4.5vw;
+  }
+  .footer__img-redes {
+    display: none;
   }
 }
+.footer__contacto img {
+  display: none;
+}
+
 /* FINAL MEDIA QUERY DEL FOOTER */
 
 /*# sourceMappingURL=styles.css.map */
